@@ -1,7 +1,7 @@
 import random
 
 
-
+# Listas fictícias para gerar dados aleatórios
 
 nomes = ['Ana Silva',
 'Pedro Santos',
@@ -35,6 +35,7 @@ estados = ['São Paulo (SP)',
 
 
 while True:
+    # Informações sobre o app
     print('###### Bem-vindo ao gerador de dados ######')
     print()
     print('Escolha quais dados devem ser gerados entre: ')
@@ -44,13 +45,15 @@ while True:
     opcoes = input('Digite o número respectivo à escolha ou "parar" \npara sair do sistema: ')
     print()
 
+    # Condição para parar a aplicação
     if opcoes.lower() == 'parar':
             print('Você está saindo do sistema...')
             break
-
+    
+    #Lista vazia para acrescentar os dados do usuário
     dados = []
 
-
+    #Laço para tratamento dos dados
     for opcao in opcoes:
         if opcao == '1':
             dados.append(random.choice(nomes))
@@ -66,6 +69,7 @@ while True:
             print('Por favor, digite um número entre 1 e 5.')
             print()
 
+    # Adicionando as informações na lista anteriormente vazia
     print("Dados gerados: \n")
     for dado in dados:
         print(dado)

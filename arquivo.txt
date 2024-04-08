@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 João Souza
 ana.silva@example.com
 (51) 23456-7890
 Porto Alegre
+=======
+
+Pedro Santos
+
+carolina.costa@example.com
+
+(21) 12345-6789
+
+São Paulo
+
+>>>>>>> c5c05eb42b9d5ccf7ff16e01b1fd25ab8f85c882
 Rio de Janeiro (RJ)
