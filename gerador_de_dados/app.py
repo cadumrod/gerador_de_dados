@@ -71,15 +71,11 @@ while True:
         print(dado)
     print()
 
-    while opcoes != 'parar':
-        if opcao == '1' or '2' or '3' or '4' or '5':
-            salvar = input('Você deseja salvar os dados em um arquivo .txt? [s]im ou [n]ao: ')
-            if salvar.lower() == 's':
-                with open("arquivo.txt", "a") as arquivo:
-                    for dado in dados:
-                        arquivo.write(opcao + '\n')
-                    print(f'Os dados foram salvos em "arquivo.txt". ')
-                print()
-                break
-            elif salvar.lower() == 'n':
-                break
+    if dados:
+        salvar = input('Você deseja salvar os dados em um arquivo .txt? [s]im ou [n]ao: ')
+        if salvar.lower() == 's':
+            with open("arquivo.txt", "a") as arquivo:
+                for dado in dados:
+                    arquivo.write(dado + '\n')
+                print(f'Os dados foram salvos em "arquivo.txt".')
+            print()
